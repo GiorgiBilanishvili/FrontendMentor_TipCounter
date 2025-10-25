@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ========= BODY ========= */
+body {
+  background-color: hsl(185, 41%, 84%);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+/* ========= LOGO ========= */
+.logo {
+  width: 100px;
+  margin-bottom: 30px;
+}
+
+/* ========= MAIN CONTAINER ========= */
+.main_container {
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 20px;
+  padding: 30px;
+  max-width: 900px;
+  width: 100%;
+  gap: 30px;
+}
+
+/* ========= LEFT SIDE (Inputs) ========= */
+.main_container_isideBlock {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* SECTION TITLES */
+h2 {
+  color: hsl(186, 14%, 43%);
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+/* INPUT WRAPPERS */
+.input-wrapper {
+  position: relative;
+  background-color: hsl(189, 41%, 97%);
+  border-radius: 8px;
+  padding: 10px 15px;
+}
+
+.input-wrapper input {
+  width: 100%;
+  border: none;
+  background: none;
+  font-size: 18px;
+  text-align: right;
+  color: hsl(183, 100%, 15%);
+  outline: none;
+}
+
+.input-wrapper .icon {
+  position: absolute;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: hsl(184, 14%, 56%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.error-text {
+  color: red;
+  font-size: 12px;
+}
+
+/* ========= TIP BUTTONS ========= */
+.BTNs {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  gap: 10px;
+}
+
+.BTNs button {
+  background-color: hsl(183, 100%, 15%);
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.BTNs button:hover {
+  background-color: hsl(172, 67%, 45%);
+  color: hsl(183, 100%, 15%);
+}
+
+._custom_ {
+  background-color: hsl(189, 41%, 97%);
+  color: hsl(183, 100%, 15%);
+}
+
+/* ========= RESULT SECTION ========= */
+.RESULT {
+  flex: 1;
+  background-color: hsl(183, 100%, 15%);
+  border-radius: 20px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+}
+
+.RESULT h3,
+.RESULT h4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+}
+
+.RESULT .person {
+  color: hsl(184, 14%, 56%);
+  font-size: 12px;
+}
+
+.tip_amount_RESULT,
+.total_RESULT {
+  font-size: 28px;
+  font-weight: bold;
+  color: hsl(172, 67%, 45%);
+}
+
+.reset {
+  background-color: hsl(172, 67%, 45%);
+  border: none;
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  color: hsl(183, 100%, 15%);
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.reset:hover {
+  background-color: hsl(185, 41%, 84%);
+}
+
+/* ========= RESPONSIVE ========= */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .main_container {
+    flex-direction: column;
+    padding: 25px;
+  }
+
+  .RESULT {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .BTNs {
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .main_container {
+    padding: 20px;
+    border-radius: 15px;
+  }
+
+  .RESULT {
+    padding: 20px;
+    border-radius: 15px;
+  }
+
+  .BTNs button {
+    font-size: 16px;
+    padding: 8px;
+  }
+
+  .tip_amount_RESULT,
+  .total_RESULT {
+    font-size: 22px;
+  }
+}

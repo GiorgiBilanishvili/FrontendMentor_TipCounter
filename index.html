@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Figtree:ital,wght@0,300..900;1,300..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Inconsolata:wght@200..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Young+Serif&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Tip calculator app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body>
+    <img class="logo" src="images/logo.svg" alt="img" />
+    <div class="main_container">
+      <div class="main_container_isideBlock">
+        <!-- BILL section -->
+        <div class="BILL">
+          <h2>Bill</h2>
+          <div class="input-wrapper">
+            <span class="icon">$</span>
+            <input type="number" />
+          </div>
+        </div>
+        <!-- SELECT TIP% section -->
+        <div class="select_tip">
+          <h2>Select Tip %</h2>
+          <div class="BTNs">
+            <button class="_5_">5%</button>
+            <button class="_10_">10%</button>
+            <button class="_15_">15%</button>
+            <button class="_25_">25%</button>
+            <button class="_50_">50%</button>
+            <button class="_custom_">Custom</button>
+          </div>
+        </div>
+        <!-- NUMBER OF PEOPLE section -->
+        <div class="number_of_people">
+          <h2>Number of People <span class="error-text"></span></h2>
+          <div class="input-wrapper">
+            <span class="icon">
+              <img src="images/icon-person.svg" alt="img" />
+            </span>
+            <input type="number" />
+          </div>
+        </div>
+        <!-- RESULT section (green div with reset button) -->
+      </div>
+      <div class="RESULT">
+        <h3>
+          Tip Amount <br />
+          <span class="person">/ person</span
+          ><span class="tip_amount_RESULT">...</span>
+        </h3>
+        <h4>
+          Total <br />
+          <span class="person">/ person</span
+          ><span class="total_RESULT">...</span>
+        </h4>
+        <button class="reset">RESET</button>
+      </div>
+    </div>
+    <script src="scripts.js"></script>
+  </body>
+</html>
